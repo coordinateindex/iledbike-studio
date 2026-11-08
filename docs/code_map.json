@@ -1,0 +1,1630 @@
+{
+  "files": [
+    {
+      "calls": [
+        "AppStorage",
+        "BikeConnection",
+        "Binding",
+        "Button",
+        "Circle",
+        "Color",
+        "ColorPicker",
+        "Data",
+        "Date",
+        "Design",
+        "Divider",
+        "Double",
+        "ForEach",
+        "HStack",
+        "Image",
+        "Int",
+        "JSONDecoder",
+        "JSONEncoder",
+        "Label",
+        "NSApplicationDelegateAdaptor",
+        "NSColor",
+        "NSOpenPanel",
+        "NSSavePanel",
+        "PixelDrawingCanvas",
+        "PixelPreview",
+        "ProgressView",
+        "RoundedRectangle",
+        "Slider",
+        "Spacer",
+        "String",
+        "StudioView",
+        "Text",
+        "TextField",
+        "TimelineView",
+        "Toggle",
+        "UInt32",
+        "VStack",
+        "WindowGroup",
+        "accessibilityLabel",
+        "activate",
+        "animation",
+        "append",
+        "applicationDidFinishLaunching",
+        "applicationShouldTerminateAfterLastWindowClosed",
+        "aspectRatio",
+        "attributesOfItem",
+        "background",
+        "buttonStyle",
+        "colorHex",
+        "connect",
+        "contains",
+        "controlSize",
+        "decode",
+        "defaultSize",
+        "disabled",
+        "disconnect",
+        "dropFirst",
+        "encode",
+        "exportPreview",
+        "fill",
+        "fixedSize",
+        "font",
+        "foregroundStyle",
+        "frame",
+        "importImage",
+        "invalid",
+        "joined",
+        "keyboardShortcut",
+        "lineSpacing",
+        "max",
+        "min",
+        "monospacedDigit",
+        "multilineTextAlignment",
+        "onChange",
+        "opacity",
+        "openDesign",
+        "overlay",
+        "padding",
+        "png",
+        "popLast",
+        "preferredColorScheme",
+        "previewOffset",
+        "program",
+        "raster",
+        "redoImage",
+        "rememberImage",
+        "removeFirst",
+        "rounded",
+        "runModal",
+        "saveDesign",
+        "scan",
+        "send",
+        "sheet",
+        "stroke",
+        "suffix",
+        "swiftColor",
+        "system",
+        "textFieldStyle",
+        "textSelection",
+        "timeIntervalSince",
+        "toggleStyle",
+        "toolButton",
+        "tracking",
+        "undoImage",
+        "upload",
+        "usingColorSpace",
+        "validate",
+        "windowStyle",
+        "write"
+      ],
+      "imports": [
+        "AppKit",
+        "SwiftUI",
+        "UniformTypeIdentifiers"
+      ],
+      "path": "Sources/App.swift",
+      "symbols": [
+        {
+          "kind": "struct",
+          "line": 5,
+          "name": "StudioApp"
+        },
+        {
+          "kind": "class",
+          "line": 13,
+          "name": "AppDelegate"
+        },
+        {
+          "kind": "func",
+          "line": 14,
+          "name": "applicationDidFinishLaunching"
+        },
+        {
+          "kind": "func",
+          "line": 15,
+          "name": "applicationShouldTerminateAfterLastWindowClosed"
+        },
+        {
+          "kind": "struct",
+          "line": 18,
+          "name": "StudioView"
+        },
+        {
+          "kind": "func",
+          "line": 120,
+          "name": "toolButton"
+        },
+        {
+          "kind": "func",
+          "line": 196,
+          "name": "previewOffset"
+        },
+        {
+          "kind": "func",
+          "line": 200,
+          "name": "swiftColor"
+        },
+        {
+          "kind": "func",
+          "line": 204,
+          "name": "colorHex"
+        },
+        {
+          "kind": "func",
+          "line": 209,
+          "name": "send"
+        },
+        {
+          "kind": "func",
+          "line": 213,
+          "name": "rememberImage"
+        },
+        {
+          "kind": "func",
+          "line": 218,
+          "name": "undoImage"
+        },
+        {
+          "kind": "func",
+          "line": 223,
+          "name": "redoImage"
+        },
+        {
+          "kind": "func",
+          "line": 228,
+          "name": "importImage"
+        },
+        {
+          "kind": "func",
+          "line": 238,
+          "name": "saveDesign"
+        },
+        {
+          "kind": "func",
+          "line": 247,
+          "name": "openDesign"
+        },
+        {
+          "kind": "func",
+          "line": 257,
+          "name": "exportPreview"
+        }
+      ]
+    },
+    {
+      "calls": [
+        "CBCentralManager",
+        "CBUUID",
+        "DispatchWorkItem",
+        "DisplayPowerChange",
+        "Double",
+        "FrameDecoder",
+        "Int",
+        "String",
+        "append",
+        "asyncAfter",
+        "beginDisplayPowerChange",
+        "beginSignalSelection",
+        "beginUpload",
+        "cancel",
+        "cancelPeripheralConnection",
+        "centralManager",
+        "centralManagerDidUpdateState",
+        "connect",
+        "contains",
+        "deadline",
+        "disconnect",
+        "discoverCharacteristics",
+        "discoverServices",
+        "envelope",
+        "escaping",
+        "fail",
+        "feed",
+        "fflush",
+        "finishUpload",
+        "first",
+        "iLedBike",
+        "init",
+        "invalid",
+        "joined",
+        "log",
+        "lowercased",
+        "max",
+        "maximumWriteValueLength",
+        "min",
+        "now",
+        "os",
+        "pauseForBackground",
+        "peripheral",
+        "peripheralIsReady",
+        "print",
+        "pump",
+        "queryInfo",
+        "reconnect",
+        "removeFirst",
+        "reports",
+        "retrievePeripherals",
+        "scan",
+        "scanForPeripherals",
+        "selectSignal",
+        "send",
+        "sendPacket",
+        "setDisplayPower",
+        "setNotifyValue",
+        "stopScan",
+        "stride",
+        "subdata",
+        "upload",
+        "validate",
+        "verify",
+        "verifyMode",
+        "writeValue"
+      ],
+      "imports": [
+        "Combine",
+        "CoreBluetooth",
+        "Foundation"
+      ],
+      "path": "Sources/Bluetooth.swift",
+      "symbols": [
+        {
+          "kind": "class",
+          "line": 5,
+          "name": "BikeConnection"
+        },
+        {
+          "kind": "func",
+          "line": 49,
+          "name": "log"
+        },
+        {
+          "kind": "func",
+          "line": 53,
+          "name": "scan"
+        },
+        {
+          "kind": "func",
+          "line": 66,
+          "name": "connect"
+        },
+        {
+          "kind": "func",
+          "line": 74,
+          "name": "disconnect"
+        },
+        {
+          "kind": "func",
+          "line": 86,
+          "name": "reconnect"
+        },
+        {
+          "kind": "func",
+          "line": 97,
+          "name": "pauseForBackground"
+        },
+        {
+          "kind": "func",
+          "line": 101,
+          "name": "fail"
+        },
+        {
+          "kind": "func",
+          "line": 104,
+          "name": "deadline"
+        },
+        {
+          "kind": "func",
+          "line": 108,
+          "name": "centralManagerDidUpdateState"
+        },
+        {
+          "kind": "func",
+          "line": 123,
+          "name": "centralManager"
+        },
+        {
+          "kind": "func",
+          "line": 133,
+          "name": "centralManager"
+        },
+        {
+          "kind": "func",
+          "line": 137,
+          "name": "centralManager"
+        },
+        {
+          "kind": "func",
+          "line": 138,
+          "name": "centralManager"
+        },
+        {
+          "kind": "func",
+          "line": 142,
+          "name": "peripheral"
+        },
+        {
+          "kind": "func",
+          "line": 147,
+          "name": "peripheral"
+        },
+        {
+          "kind": "func",
+          "line": 152,
+          "name": "peripheral"
+        },
+        {
+          "kind": "func",
+          "line": 159,
+          "name": "queryInfo"
+        },
+        {
+          "kind": "func",
+          "line": 174,
+          "name": "selectSignal"
+        },
+        {
+          "kind": "func",
+          "line": 180,
+          "name": "beginSignalSelection"
+        },
+        {
+          "kind": "func",
+          "line": 203,
+          "name": "setDisplayPower"
+        },
+        {
+          "kind": "func",
+          "line": 209,
+          "name": "beginDisplayPowerChange"
+        },
+        {
+          "kind": "func",
+          "line": 225,
+          "name": "upload"
+        },
+        {
+          "kind": "func",
+          "line": 230,
+          "name": "beginUpload"
+        },
+        {
+          "kind": "func",
+          "line": 240,
+          "name": "sendPacket"
+        },
+        {
+          "kind": "func",
+          "line": 248,
+          "name": "finishUpload"
+        },
+        {
+          "kind": "func",
+          "line": 262,
+          "name": "send"
+        },
+        {
+          "kind": "func",
+          "line": 278,
+          "name": "pump"
+        },
+        {
+          "kind": "func",
+          "line": 287,
+          "name": "peripheralIsReady"
+        },
+        {
+          "kind": "func",
+          "line": 288,
+          "name": "peripheral"
+        }
+      ]
+    },
+    {
+      "calls": [
+        "CGBitmapInfo",
+        "CGColor",
+        "CGColorSpaceCreateDeviceRGB",
+        "CGContext",
+        "CGDataProvider",
+        "CGFloat",
+        "CGImage",
+        "CGImageSourceCreateThumbnailAtIndex",
+        "CGImageSourceCreateWithURL",
+        "CGPoint",
+        "CGRect",
+        "CGSize",
+        "Data",
+        "Int",
+        "NSAttributedString",
+        "NSBitmapImageRep",
+        "NSGraphicsContext",
+        "NSPoint",
+        "Raster",
+        "UIGraphicsPopContext",
+        "UIGraphicsPushContext",
+        "UIImage",
+        "UInt32",
+        "UInt8",
+        "action",
+        "assumingMemoryBound",
+        "attributesOfItem",
+        "ceil",
+        "contains",
+        "draw",
+        "dropFirst",
+        "fill",
+        "guard",
+        "imageProgram",
+        "importImage",
+        "invalid",
+        "max",
+        "message",
+        "min",
+        "monospacedSystemFont",
+        "os",
+        "png",
+        "pngData",
+        "program",
+        "range",
+        "raster",
+        "representation",
+        "reserveCapacity",
+        "restoreGraphicsState",
+        "saveGraphicsState",
+        "scaleBy",
+        "setFillColor",
+        "setShouldAntialias",
+        "size",
+        "stride",
+        "text",
+        "translateBy",
+        "trimmingCharacters",
+        "update",
+        "validate"
+      ],
+      "imports": [
+        "AppKit",
+        "ImageIO",
+        "UIKit",
+        "UniformTypeIdentifiers"
+      ],
+      "path": "Sources/Design.swift",
+      "symbols": [
+        {
+          "kind": "struct",
+          "line": 9,
+          "name": "Design"
+        },
+        {
+          "kind": "func",
+          "line": 17,
+          "name": "validate"
+        },
+        {
+          "kind": "func",
+          "line": 29,
+          "name": "raster"
+        },
+        {
+          "kind": "func",
+          "line": 35,
+          "name": "program"
+        },
+        {
+          "kind": "struct",
+          "line": 43,
+          "name": "Raster"
+        },
+        {
+          "kind": "func",
+          "line": 48,
+          "name": "text"
+        },
+        {
+          "kind": "func",
+          "line": 81,
+          "name": "importImage"
+        },
+        {
+          "kind": "func",
+          "line": 97,
+          "name": "draw"
+        },
+        {
+          "kind": "func",
+          "line": 120,
+          "name": "png"
+        }
+      ]
+    },
+    {
+      "calls": [
+        "DragGesture",
+        "Int",
+        "PixelPreview",
+        "Raster",
+        "Rectangle",
+        "UInt32",
+        "UInt8",
+        "abs",
+        "accessibilityHint",
+        "accessibilityLabel",
+        "beginStroke",
+        "contains",
+        "contentShape",
+        "dropFirst",
+        "floor",
+        "gesture",
+        "guard",
+        "line",
+        "min",
+        "replaceSubrange",
+        "var"
+      ],
+      "imports": [
+        "SwiftUI"
+      ],
+      "path": "Sources/PixelDrawing.swift",
+      "symbols": [
+        {
+          "kind": "enum",
+          "line": 3,
+          "name": "PixelDrawing"
+        },
+        {
+          "kind": "func",
+          "line": 7,
+          "name": "line"
+        },
+        {
+          "kind": "struct",
+          "line": 26,
+          "name": "PixelDrawingCanvas"
+        }
+      ]
+    },
+    {
+      "calls": [
+        "CGFloat",
+        "CGRect",
+        "Color",
+        "Double",
+        "Path",
+        "accessibilityLabel",
+        "color",
+        "contains",
+        "fill",
+        "min",
+        "opacity",
+        "quantize"
+      ],
+      "imports": [
+        "SwiftUI"
+      ],
+      "path": "Sources/PixelPreview.swift",
+      "symbols": [
+        {
+          "kind": "struct",
+          "line": 3,
+          "name": "PixelPreview"
+        }
+      ]
+    },
+    {
+      "calls": [
+        "Array",
+        "Data",
+        "Int",
+        "UInt32",
+        "UInt8",
+        "append",
+        "be",
+        "contains",
+        "crc",
+        "dropFirst",
+        "enumerated",
+        "envelope",
+        "feed",
+        "for",
+        "guard",
+        "if",
+        "imageProgram",
+        "init",
+        "invalid",
+        "literals",
+        "min",
+        "precondition",
+        "quantize",
+        "reduce",
+        "reversed",
+        "stride",
+        "suffix",
+        "upload",
+        "validate",
+        "verify",
+        "verifyMode"
+      ],
+      "imports": [
+        "Foundation"
+      ],
+      "path": "Sources/Protocol.swift",
+      "symbols": [
+        {
+          "kind": "enum",
+          "line": 3,
+          "name": "StudioError"
+        },
+        {
+          "kind": "enum",
+          "line": 8,
+          "name": "BikeProtocol"
+        },
+        {
+          "kind": "enum",
+          "line": 9,
+          "name": "Signal"
+        },
+        {
+          "kind": "func",
+          "line": 21,
+          "name": "verifyMode"
+        },
+        {
+          "kind": "enum",
+          "line": 27,
+          "name": "UploadTarget"
+        },
+        {
+          "kind": "func",
+          "line": 34,
+          "name": "be"
+        },
+        {
+          "kind": "func",
+          "line": 37,
+          "name": "envelope"
+        },
+        {
+          "kind": "func",
+          "line": 46,
+          "name": "crc"
+        },
+        {
+          "kind": "func",
+          "line": 55,
+          "name": "literals"
+        },
+        {
+          "kind": "func",
+          "line": 63,
+          "name": "quantize"
+        },
+        {
+          "kind": "func",
+          "line": 66,
+          "name": "imageProgram"
+        },
+        {
+          "kind": "func",
+          "line": 81,
+          "name": "upload"
+        },
+        {
+          "kind": "func",
+          "line": 97,
+          "name": "validate"
+        },
+        {
+          "kind": "struct",
+          "line": 120,
+          "name": "DisplayPowerChange"
+        },
+        {
+          "kind": "func",
+          "line": 131,
+          "name": "verify"
+        },
+        {
+          "kind": "struct",
+          "line": 139,
+          "name": "FrameDecoder"
+        },
+        {
+          "kind": "func",
+          "line": 143,
+          "name": "feed"
+        }
+      ]
+    },
+    {
+      "calls": [
+        "Array",
+        "Data",
+        "Design",
+        "DisplayPowerChange",
+        "FrameDecoder",
+        "Int",
+        "JSONDecoder",
+        "JSONEncoder",
+        "String",
+        "UInt8",
+        "URL",
+        "append",
+        "autoclosure",
+        "check",
+        "condition",
+        "contains",
+        "crc",
+        "decode",
+        "decompress",
+        "dropFirst",
+        "dropLast",
+        "encode",
+        "enumerated",
+        "envelope",
+        "exit",
+        "feed",
+        "for",
+        "fputs",
+        "imageProgram",
+        "importImage",
+        "literals",
+        "main",
+        "map",
+        "payload",
+        "png",
+        "prefix",
+        "print",
+        "program",
+        "quantize",
+        "raster",
+        "read",
+        "reduce",
+        "suffix",
+        "upload",
+        "validate",
+        "verify",
+        "verifyMode",
+        "write"
+      ],
+      "imports": [
+        "AppKit",
+        "Foundation"
+      ],
+      "path": "Tests/Checks.swift",
+      "symbols": [
+        {
+          "kind": "func",
+          "line": 4,
+          "name": "check"
+        },
+        {
+          "kind": "func",
+          "line": 7,
+          "name": "payload"
+        },
+        {
+          "kind": "func",
+          "line": 11,
+          "name": "read"
+        },
+        {
+          "kind": "func",
+          "line": 15,
+          "name": "decompress"
+        },
+        {
+          "kind": "struct",
+          "line": 36,
+          "name": "Checks"
+        },
+        {
+          "kind": "func",
+          "line": 37,
+          "name": "main"
+        }
+      ]
+    },
+    {
+      "calls": [],
+      "imports": [],
+      "path": "scripts/build.sh",
+      "symbols": []
+    },
+    {
+      "calls": [
+        "Path",
+        "abs",
+        "bytearray",
+        "bytes",
+        "chunk",
+        "compress",
+        "crc32",
+        "dot",
+        "dumps",
+        "if",
+        "in",
+        "join",
+        "len",
+        "line",
+        "mkdir",
+        "pack",
+        "print",
+        "range",
+        "rect",
+        "resolve",
+        "write_bytes",
+        "write_text"
+      ],
+      "imports": [
+        "json",
+        "pathlib",
+        "struct",
+        "zlib"
+      ],
+      "path": "scripts/generate_app_icon.py",
+      "symbols": [
+        {
+          "kind": "struct",
+          "line": 4,
+          "name": "import"
+        },
+        {
+          "kind": "def",
+          "line": 11,
+          "name": "rect"
+        },
+        {
+          "kind": "def",
+          "line": 20,
+          "name": "dot"
+        },
+        {
+          "kind": "def",
+          "line": 22,
+          "name": "line"
+        },
+        {
+          "kind": "def",
+          "line": 55,
+          "name": "chunk"
+        }
+      ]
+    },
+    {
+      "calls": [
+        "Path",
+        "append",
+        "artwork",
+        "b",
+        "count",
+        "dumps",
+        "escape",
+        "findall",
+        "finditer",
+        "glob",
+        "group",
+        "in",
+        "is_file",
+        "join",
+        "mkdir",
+        "print",
+        "read_text",
+        "relative_to",
+        "resolve",
+        "rglob",
+        "set",
+        "sorted",
+        "start",
+        "str",
+        "title",
+        "write_text"
+      ],
+      "imports": [
+        "html",
+        "json",
+        "pathlib",
+        "re"
+      ],
+      "path": "scripts/generate_cockpit.py",
+      "symbols": []
+    },
+    {
+      "calls": [
+        "Path",
+        "append",
+        "arr",
+        "encode",
+        "hexdigest",
+        "items",
+        "join",
+        "mkdir",
+        "obj",
+        "print",
+        "q",
+        "reference",
+        "replace",
+        "resolve",
+        "sha256",
+        "uid",
+        "update",
+        "upper",
+        "write_text"
+      ],
+      "imports": [
+        "hashlib",
+        "pathlib"
+      ],
+      "path": "scripts/generate_ios_project.py",
+      "symbols": [
+        {
+          "kind": "def",
+          "line": 8,
+          "name": "uid"
+        },
+        {
+          "kind": "def",
+          "line": 9,
+          "name": "q"
+        },
+        {
+          "kind": "def",
+          "line": 11,
+          "name": "obj"
+        },
+        {
+          "kind": "def",
+          "line": 14,
+          "name": "arr"
+        },
+        {
+          "kind": "def",
+          "line": 52,
+          "name": "reference"
+        }
+      ]
+    },
+    {
+      "calls": [],
+      "imports": [],
+      "path": "scripts/scan_advertisements.sh",
+      "symbols": []
+    },
+    {
+      "calls": [
+        "AdvertisementScanner",
+        "CBCentralManager",
+        "Data",
+        "Double",
+        "Int",
+        "String",
+        "asyncAfter",
+        "centralManager",
+        "centralManagerDidUpdateState",
+        "data",
+        "dropFirst",
+        "emit",
+        "exit",
+        "fflush",
+        "finish",
+        "init",
+        "map",
+        "max",
+        "min",
+        "now",
+        "print",
+        "reduce",
+        "run",
+        "scanForPeripherals",
+        "sorted",
+        "stopScan"
+      ],
+      "imports": [
+        "CoreBluetooth",
+        "Foundation"
+      ],
+      "path": "scripts/scan_advertisements.swift",
+      "symbols": [
+        {
+          "kind": "func",
+          "line": 6,
+          "name": "emit"
+        },
+        {
+          "kind": "class",
+          "line": 10,
+          "name": "AdvertisementScanner"
+        },
+        {
+          "kind": "func",
+          "line": 21,
+          "name": "centralManagerDidUpdateState"
+        },
+        {
+          "kind": "func",
+          "line": 35,
+          "name": "centralManager"
+        },
+        {
+          "kind": "func",
+          "line": 49,
+          "name": "finish"
+        }
+      ]
+    },
+    {
+      "calls": [],
+      "imports": [],
+      "path": "scripts/test.sh",
+      "symbols": []
+    },
+    {
+      "calls": [
+        "FileWrapper",
+        "JSONDecoder",
+        "JSONEncoder",
+        "decode",
+        "encode",
+        "fileWrapper",
+        "init",
+        "invalid",
+        "validate"
+      ],
+      "imports": [
+        "SwiftUI",
+        "UniformTypeIdentifiers"
+      ],
+      "path": "iOS/iLedBikeMobile/DesignDocument.swift",
+      "symbols": [
+        {
+          "kind": "struct",
+          "line": 4,
+          "name": "DesignDocument"
+        },
+        {
+          "kind": "func",
+          "line": 15,
+          "name": "fileWrapper"
+        }
+      ]
+    },
+    {
+      "calls": [
+        "Design",
+        "HalloweenTemplate",
+        "contains",
+        "enumerated",
+        "for",
+        "image",
+        "message",
+        "precondition",
+        "replaceSubrange"
+      ],
+      "imports": [
+        "Foundation"
+      ],
+      "path": "iOS/iLedBikeMobile/HalloweenDesigns.swift",
+      "symbols": [
+        {
+          "kind": "struct",
+          "line": 5,
+          "name": "HalloweenTemplate"
+        },
+        {
+          "kind": "enum",
+          "line": 12,
+          "name": "HalloweenDesigns"
+        },
+        {
+          "kind": "func",
+          "line": 36,
+          "name": "image"
+        },
+        {
+          "kind": "func",
+          "line": 54,
+          "name": "message"
+        }
+      ]
+    },
+    {
+      "calls": [
+        "Data",
+        "Design",
+        "Dictionary",
+        "JSONDecoder",
+        "JSONEncoder",
+        "PhoneLibrary",
+        "SavedBike",
+        "SavedDesign",
+        "Set",
+        "String",
+        "UUID",
+        "appendingPathComponent",
+        "assign",
+        "asyncAfter",
+        "cancel",
+        "compactMap",
+        "contains",
+        "decode",
+        "encode",
+        "fileExists",
+        "first",
+        "firstIndex",
+        "forget",
+        "init",
+        "insert",
+        "invalid",
+        "isSubset",
+        "map",
+        "migrateIfNeeded",
+        "moveConnection",
+        "now",
+        "owner",
+        "prefix",
+        "private",
+        "remove",
+        "removeDesigns",
+        "saveDesign",
+        "saveNow",
+        "scheduleSave",
+        "selectBike",
+        "sorted",
+        "updateDesign",
+        "urls",
+        "validate",
+        "write",
+        "zip"
+      ],
+      "imports": [
+        "Combine",
+        "Foundation"
+      ],
+      "path": "iOS/iLedBikeMobile/LibraryStore.swift",
+      "symbols": [
+        {
+          "kind": "struct",
+          "line": 4,
+          "name": "SavedBike"
+        },
+        {
+          "kind": "struct",
+          "line": 9,
+          "name": "SavedDesign"
+        },
+        {
+          "kind": "struct",
+          "line": 14,
+          "name": "PhoneLibrary"
+        },
+        {
+          "kind": "func",
+          "line": 20,
+          "name": "migrateIfNeeded"
+        },
+        {
+          "kind": "func",
+          "line": 34,
+          "name": "validate"
+        },
+        {
+          "kind": "class",
+          "line": 45,
+          "name": "LibraryStore"
+        },
+        {
+          "kind": "func",
+          "line": 72,
+          "name": "updateDesign"
+        },
+        {
+          "kind": "func",
+          "line": 75,
+          "name": "selectBike"
+        },
+        {
+          "kind": "func",
+          "line": 79,
+          "name": "assign"
+        },
+        {
+          "kind": "func",
+          "line": 86,
+          "name": "owner"
+        },
+        {
+          "kind": "func",
+          "line": 91,
+          "name": "moveConnection"
+        },
+        {
+          "kind": "func",
+          "line": 105,
+          "name": "forget"
+        },
+        {
+          "kind": "func",
+          "line": 109,
+          "name": "saveDesign"
+        },
+        {
+          "kind": "func",
+          "line": 114,
+          "name": "removeDesigns"
+        },
+        {
+          "kind": "func",
+          "line": 117,
+          "name": "scheduleSave"
+        },
+        {
+          "kind": "func",
+          "line": 122,
+          "name": "saveNow"
+        }
+      ]
+    },
+    {
+      "calls": [
+        "AppStorage",
+        "BikeConnection",
+        "Binding",
+        "Button",
+        "CGFloat",
+        "Circle",
+        "Color",
+        "ColorPicker",
+        "ContentUnavailableView",
+        "Data",
+        "Date",
+        "DesignDocument",
+        "Double",
+        "EditButton",
+        "Environment",
+        "ForEach",
+        "HStack",
+        "Image",
+        "Int",
+        "JSONDecoder",
+        "Label",
+        "LibraryStore",
+        "PhoneStudio",
+        "PhotosPicker",
+        "Picker",
+        "PixelDrawingCanvas",
+        "PixelPreview",
+        "ProgressView",
+        "RoundedRectangle",
+        "ScrollView",
+        "Slider",
+        "Spacer",
+        "String",
+        "TabView",
+        "Text",
+        "TextField",
+        "TimelineView",
+        "Toggle",
+        "ToolbarItem",
+        "ToolbarItemGroup",
+        "TouchPixelEditor",
+        "UIColor",
+        "UINotificationFeedbackGenerator",
+        "UInt32",
+        "UUID",
+        "VStack",
+        "accessibilityIdentifier",
+        "accessibilityLabel",
+        "alert",
+        "allowsHitTesting",
+        "animation",
+        "append",
+        "appendingPathComponent",
+        "aspectRatio",
+        "assign",
+        "background",
+        "bold",
+        "buttonStyle",
+        "card",
+        "confirmationDialog",
+        "connect",
+        "controlSize",
+        "decode",
+        "disabled",
+        "disconnect",
+        "dismiss",
+        "dropFirst",
+        "failure",
+        "fileExporter",
+        "fileImporter",
+        "fill",
+        "focused",
+        "font",
+        "fontWeight",
+        "foregroundStyle",
+        "forget",
+        "frame",
+        "fullScreenCover",
+        "get",
+        "getRed",
+        "importImage",
+        "intro",
+        "invalid",
+        "joined",
+        "labelsHidden",
+        "lineLimit",
+        "loadTransferable",
+        "lowercased",
+        "max",
+        "monospaced",
+        "moveConnection",
+        "navigationBarTitleDisplayMode",
+        "navigationTitle",
+        "notificationOccurred",
+        "onChange",
+        "opacity",
+        "overlay",
+        "owner",
+        "padding",
+        "pauseForBackground",
+        "phoneColor",
+        "phoneHex",
+        "pickerStyle",
+        "popLast",
+        "preferredColorScheme",
+        "prefix",
+        "program",
+        "queryInfo",
+        "raster",
+        "reconnect",
+        "remember",
+        "removeDesigns",
+        "removeFirst",
+        "removeItem",
+        "resourceValues",
+        "rounded",
+        "safeAreaInset",
+        "saveConnection",
+        "saveDesign",
+        "saveNow",
+        "scan",
+        "scrollDisabled",
+        "scrollDismissesKeyboard",
+        "selectBike",
+        "selectSignal",
+        "setDisplayPower",
+        "shared",
+        "sheet",
+        "signalButton",
+        "startAccessingSecurityScopedResource",
+        "stopAccessingSecurityScopedResource",
+        "stroke",
+        "suffix",
+        "system",
+        "tag",
+        "textInputAutocapitalization",
+        "textSelection",
+        "timeIntervalSince",
+        "tint",
+        "tracking",
+        "trimmingCharacters",
+        "updateDesign",
+        "upload",
+        "validate",
+        "weight",
+        "write"
+      ],
+      "imports": [
+        "CoreBluetooth",
+        "PhotosUI",
+        "SwiftUI",
+        "UIKit"
+      ],
+      "path": "iOS/iLedBikeMobile/PhoneStudio.swift",
+      "symbols": [
+        {
+          "kind": "func",
+          "line": 9,
+          "name": "phoneColor"
+        },
+        {
+          "kind": "func",
+          "line": 13,
+          "name": "phoneHex"
+        },
+        {
+          "kind": "struct",
+          "line": 19,
+          "name": "BikePhoneApp"
+        },
+        {
+          "kind": "struct",
+          "line": 25,
+          "name": "PhoneStudio"
+        },
+        {
+          "kind": "func",
+          "line": 244,
+          "name": "saveConnection"
+        },
+        {
+          "kind": "func",
+          "line": 359,
+          "name": "signalButton"
+        },
+        {
+          "kind": "func",
+          "line": 428,
+          "name": "intro"
+        },
+        {
+          "kind": "func",
+          "line": 437,
+          "name": "card"
+        },
+        {
+          "kind": "struct",
+          "line": 440,
+          "name": "TouchPixelEditor"
+        },
+        {
+          "kind": "func",
+          "line": 483,
+          "name": "remember"
+        }
+      ]
+    },
+    {
+      "calls": [
+        "Array",
+        "Data",
+        "Design",
+        "DisplayPowerChange",
+        "FrameDecoder",
+        "Int",
+        "JSONEncoder",
+        "LibraryStore",
+        "PhoneLibrary",
+        "Raster",
+        "SavedBike",
+        "SavedDesign",
+        "Signal",
+        "UInt8",
+        "UUID",
+        "XCTAssertEqual",
+        "XCTAssertGreaterThan",
+        "XCTAssertNil",
+        "XCTAssertNotNil",
+        "XCTAssertThrowsError",
+        "XCTAssertTrue",
+        "appendingPathComponent",
+        "assign",
+        "contains",
+        "dropLast",
+        "encode",
+        "envelope",
+        "feed",
+        "imageProgram",
+        "importImage",
+        "in",
+        "line",
+        "moveConnection",
+        "owner",
+        "png",
+        "program",
+        "raster",
+        "removeItem",
+        "saveDesign",
+        "saveNow",
+        "selectBike",
+        "suffix",
+        "testAmbiguousLegacyLibraryIsPreservedWithoutMigration",
+        "testBikeDraftsAndIdentitySurviveReload",
+        "testConnectionCorrectionCannotOverwriteAnotherSavedPanel",
+        "testConnectionCorrectionPreservesBothDraftsAndSurvivesReload",
+        "testDisplayPowerRequiresExplicitScopeAndOnlyExpectedSettingChange",
+        "testInvalidDecodedLibraryUsesSafeDefaults",
+        "testInvalidLibraryIsNotOverwritten",
+        "testLegacyLibraryMigrationPreservesProfilesDraftsAndSelection",
+        "testPhoneTextAndImageRoundTrip",
+        "testSignalSelectionIsScopedAndRequiresExactModeReadback",
+        "testSlotsRemainProtected",
+        "testTextReadsUpright",
+        "text",
+        "updateDesign",
+        "upload",
+        "validate",
+        "verify",
+        "verifyMode",
+        "write"
+      ],
+      "imports": [
+        "XCTest"
+      ],
+      "path": "iOS/iLedBikeMobileTests/MobileTests.swift",
+      "symbols": [
+        {
+          "kind": "class",
+          "line": 4,
+          "name": "MobileTests"
+        },
+        {
+          "kind": "func",
+          "line": 5,
+          "name": "testLegacyLibraryMigrationPreservesProfilesDraftsAndSelection"
+        },
+        {
+          "kind": "func",
+          "line": 36,
+          "name": "testAmbiguousLegacyLibraryIsPreservedWithoutMigration"
+        },
+        {
+          "kind": "func",
+          "line": 47,
+          "name": "testSignalSelectionIsScopedAndRequiresExactModeReadback"
+        },
+        {
+          "kind": "func",
+          "line": 71,
+          "name": "testDisplayPowerRequiresExplicitScopeAndOnlyExpectedSettingChange"
+        },
+        {
+          "kind": "func",
+          "line": 95,
+          "name": "testConnectionCorrectionPreservesBothDraftsAndSurvivesReload"
+        },
+        {
+          "kind": "func",
+          "line": 117,
+          "name": "testConnectionCorrectionCannotOverwriteAnotherSavedPanel"
+        },
+        {
+          "kind": "func",
+          "line": 127,
+          "name": "testSlotsRemainProtected"
+        },
+        {
+          "kind": "func",
+          "line": 139,
+          "name": "testBikeDraftsAndIdentitySurviveReload"
+        },
+        {
+          "kind": "func",
+          "line": 155,
+          "name": "testInvalidLibraryIsNotOverwritten"
+        },
+        {
+          "kind": "func",
+          "line": 162,
+          "name": "testTextReadsUpright"
+        },
+        {
+          "kind": "func",
+          "line": 167,
+          "name": "testInvalidDecodedLibraryUsesSafeDefaults"
+        },
+        {
+          "kind": "func",
+          "line": 176,
+          "name": "testPhoneTextAndImageRoundTrip"
+        }
+      ]
+    }
+  ],
+  "note": "Heuristic symbol/call inventory, not a compiler semantic graph.",
+  "schema": 1
+}

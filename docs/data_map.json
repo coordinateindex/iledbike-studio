@@ -1,0 +1,156 @@
+{
+  "contracts": [
+    {
+      "fields": {
+        "images": "four original 36x12 row-major RGB pixel designs",
+        "messages": "two scrolling text designs",
+        "storage": "immutable bundled source; selecting copies into current bike draft"
+      },
+      "monitor": "Design validation and program encoding; explicit Send remains required",
+      "name": "Halloween templates",
+      "owner": "iOS/iLedBikeMobile/HalloweenDesigns.swift"
+    },
+    {
+      "fields": {
+        "counts": "CoreBluetooth callbacks, not guaranteed over-the-air packet counts",
+        "identity": "local peripheral UUID and advertised or cached name; private",
+        "metadata": "service UUIDs, manufacturer length/company bytes, connectability, RSSI",
+        "time": "monotonic first/final observations; no power measurement"
+      },
+      "monitor": "5\u201345 second scan; no connections, pairing or GATT operations; absence is inconclusive",
+      "name": "Advertisement observations",
+      "owner": "scripts/scan_advertisements.swift"
+    },
+    {
+      "fields": {
+        "bikes": "two local profiles, distinct optional phone-scoped peripheral UUIDs",
+        "designs": "up to 200 named Design snapshots",
+        "drafts": "per-bike Design",
+        "selectedBikeID": "bike-1|bike-2",
+        "version": "2; version 1 migrates on load"
+      },
+      "monitor": "validate before load/save, atomic writes; corrupt input preserved",
+      "name": "PhoneLibrary",
+      "owner": "iOS/LibraryStore.swift"
+    },
+    {
+      "fields": {
+        "identity": "validated 36x12 advertisement, physical isolation and confirmed LED panel plus fresh RIGHT event before naming",
+        "lifetime": "disconnect in background; no automatic upload replay",
+        "readiness": "connected and fresh info reports display on"
+      },
+      "monitor": "saved owner shown during setup; explicit guarded connection-only reassignment; named destination CTA; preflight info query; stale peripheral callbacks ignored",
+      "name": "Phone connection identity and readiness",
+      "owner": "PhoneStudio / BikeConnection"
+    },
+    {
+      "fields": {
+        "key": "replaceFlashingMode",
+        "scope": "local app-wide; survives reconnects and restarts; separate from design files",
+        "type": "boolean; default true"
+      },
+      "monitor": "checkbox state; content writes still require Send to panel",
+      "name": "Double-flash preference",
+      "owner": "StudioView AppStorage"
+    },
+    {
+      "fields": {
+        "canvas": "36 columns \u00d7 12 rows",
+        "history": "up to 100 image snapshots; session-only",
+        "pixels": "same Design.imagePixels RGB888 array"
+      },
+      "monitor": "bounded pointer coordinates, continuous cell interpolation, explicit Send only",
+      "name": "Pixel drawing",
+      "owner": "PixelDrawing.swift / StudioView"
+    },
+    {
+      "fields": {
+        "color": "#RRGGBB",
+        "imagePixels": "optional 1296-byte row-major RGB array",
+        "kind": "message|image",
+        "scrolling": "boolean",
+        "speed": "1..255",
+        "text": "up to 40 characters",
+        "version": "1"
+      },
+      "monitor": "Design.validate before render/open/send",
+      "name": "Design",
+      "owner": "Design.swift"
+    },
+    {
+      "fields": {
+        "height": "12",
+        "pixels": "row-major RGB888",
+        "width": "36 or message width <=255"
+      },
+      "monitor": "bounded image decode, exact size validation",
+      "name": "Raster",
+      "owner": "Design.swift"
+    },
+    {
+      "fields": {
+        "body": "escaped payload",
+        "end": "0x03",
+        "length": "big-endian UInt16",
+        "start": "0x01"
+      },
+      "monitor": "strict length/escape decoder, opcode allowlist",
+      "name": "BLE frame",
+      "owner": "Protocol.swift"
+    },
+    {
+      "fields": {
+        "announce": "ordinary 0x02; optional 0x1A restricted to state 5",
+        "atomicity": "ordinary first, optional flash second; may partially succeed",
+        "data": "0x03, 1024-byte application chunks",
+        "delivery": "MTU-limited BLE fragments"
+      },
+      "monitor": "target-scoped command policy, indexed acknowledgements, timeout, settings comparison",
+      "name": "Program upload",
+      "owner": "Bluetooth.swift"
+    },
+    {
+      "fields": {
+        "identity": "connected UUID must match selected saved bike",
+        "request": "05 00 off or 05 01 on; explicit exact-value command grant",
+        "scope": "LED display state; no handheld-remote or full-power-isolation claim",
+        "sequence": "fresh 1F baseline, matching 05 echo, fresh 1F verification"
+      },
+      "monitor": "only requested power byte may differ; busy gate, timeout/disconnect/background cancel without replay; hardware check separate",
+      "name": "Display power operation",
+      "owner": "DisplayPowerChange / BikeConnection / PhoneStudio"
+    },
+    {
+      "fields": {
+        "identity": "selected saved bike UUID and fresh display-on baseline",
+        "query": "1C with exact state readback",
+        "request": "1B plus fixed mode 0..4; selects existing artwork",
+        "source": "manufacturer-hosted app static DEX analysis; UD and UX formats differ"
+      },
+      "monitor": "exact-operation command scope, fresh mode reply and unchanged info, conflicting remote report fails, no retries or background actions; physical test separate",
+      "name": "Signal selection",
+      "owner": "BikeProtocol.Signal / BikeConnection / PhoneStudio"
+    },
+    {
+      "fields": {
+        "mapping": "0 ordinary, 1 forward, 2 left, 3 right, 4 brake/back, 5 double-flash",
+        "notification": "1E plus state byte",
+        "scope": "physically correlated on the connected panel; no button-origin field"
+      },
+      "monitor": "user reports physical behavior; no assumption that cycle entries can be deleted",
+      "name": "Remote mode observations",
+      "owner": "docs/protocol.md / Bluetooth.swift"
+    },
+    {
+      "fields": {
+        "hardware": "compatible 36\u00d712 iLedBike",
+        "sources": "pinned public SDK and protocol references",
+        "usage": "README.md, iOS/README.md, docs/user-guide.md"
+      },
+      "monitor": "physical visual and remote checks; no hardware identity in maps",
+      "name": "Reference knowledge",
+      "owner": "docs/protocol.md"
+    }
+  ],
+  "schema": 1
+}

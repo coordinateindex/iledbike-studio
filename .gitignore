@@ -1,0 +1,9 @@
+.build/
+.research/
+.venv/
+dist/
+.DS_Store
+*.local.json
+iOS/Signing.local.xcconfig
+**/xcuserdata/
+**/*.xcuserstate

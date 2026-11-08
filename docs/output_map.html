@@ -1,0 +1,118 @@
+<!doctype html><html lang='en'><meta charset='utf-8'><meta name='viewport' content='width=device-width'><title>iLedBike output map</title><style>body{background:#11171b;color:#e1e9ed;font:15px system-ui;max-width:1100px;margin:40px auto;padding:20px}a{color:#b0f55c}pre{background:#1b2328;padding:24px;white-space:pre-wrap;overflow-wrap:anywhere;font:12px/1.6 monospace}nav{display:flex;gap:24px}</style><nav><a href='code_map.html'>Code map</a><a href='output_map.html'>Output map</a><a href='data_map.html'>Data map</a></nav><h1>iLedBike Studio · Output map</h1><pre>{
+  &quot;artifacts&quot;: [
+    {
+      &quot;committed&quot;: false,
+      &quot;owner&quot;: &quot;developer&quot;,
+      &quot;path&quot;: &quot;.build/halloween-*.png&quot;,
+      &quot;trigger&quot;: &quot;offline preset validation&quot;,
+      &quot;writer&quot;: &quot;Tests/Checks.swift&quot;
+    },
+    {
+      &quot;committed&quot;: false,
+      &quot;owner&quot;: &quot;user&quot;,
+      &quot;path&quot;: &quot;.build/*advertisements.jsonl&quot;,
+      &quot;trigger&quot;: &quot;explicit bounded read-only BLE scan&quot;,
+      &quot;writer&quot;: &quot;scripts/scan_advertisements.swift&quot;
+    },
+    {
+      &quot;committed&quot;: true,
+      &quot;owner&quot;: &quot;developer&quot;,
+      &quot;path&quot;: &quot;iOS/iLedBikeMobile.xcodeproj&quot;,
+      &quot;trigger&quot;: &quot;project regeneration&quot;,
+      &quot;writer&quot;: &quot;scripts/generate_ios_project.py&quot;
+    },
+    {
+      &quot;committed&quot;: true,
+      &quot;owner&quot;: &quot;developer&quot;,
+      &quot;path&quot;: &quot;iOS/iLedBikeMobile/Assets.xcassets&quot;,
+      &quot;trigger&quot;: &quot;icon regeneration&quot;,
+      &quot;writer&quot;: &quot;scripts/generate_app_icon.py&quot;
+    },
+    {
+      &quot;committed&quot;: false,
+      &quot;owner&quot;: &quot;user&quot;,
+      &quot;path&quot;: &quot;iPhone Documents/BikeLibrary.json&quot;,
+      &quot;trigger&quot;: &quot;debounced editing, bike assignment, background save&quot;,
+      &quot;writer&quot;: &quot;LibraryStore.saveNow&quot;
+    },
+    {
+      &quot;committed&quot;: false,
+      &quot;owner&quot;: &quot;developer&quot;,
+      &quot;path&quot;: &quot;.build/ios*/Build/Products&quot;,
+      &quot;trigger&quot;: &quot;simulator or Personal Team device build&quot;,
+      &quot;writer&quot;: &quot;xcodebuild&quot;
+    },
+    {
+      &quot;committed&quot;: false,
+      &quot;owner&quot;: &quot;user&quot;,
+      &quot;path&quot;: &quot;local app preference replaceFlashingMode&quot;,
+      &quot;trigger&quot;: &quot;double-flash checkbox changed&quot;,
+      &quot;writer&quot;: &quot;StudioView AppStorage&quot;
+    },
+    {
+      &quot;committed&quot;: false,
+      &quot;owner&quot;: &quot;developer&quot;,
+      &quot;path&quot;: &quot;dist/iLedBike Studio.app&quot;,
+      &quot;trigger&quot;: &quot;local build&quot;,
+      &quot;writer&quot;: &quot;scripts/build.sh&quot;
+    },
+    {
+      &quot;committed&quot;: false,
+      &quot;owner&quot;: &quot;user&quot;,
+      &quot;path&quot;: &quot;*.iledbike.json&quot;,
+      &quot;trigger&quot;: &quot;Save design&quot;,
+      &quot;writer&quot;: &quot;StudioView.saveDesign&quot;
+    },
+    {
+      &quot;committed&quot;: false,
+      &quot;owner&quot;: &quot;user&quot;,
+      &quot;path&quot;: &quot;*.png&quot;,
+      &quot;trigger&quot;: &quot;Export pixels&quot;,
+      &quot;writer&quot;: &quot;StudioView.exportPreview&quot;
+    },
+    {
+      &quot;committed&quot;: false,
+      &quot;owner&quot;: &quot;user&quot;,
+      &quot;path&quot;: &quot;panel ordinary program&quot;,
+      &quot;trigger&quot;: &quot;Send to panel&quot;,
+      &quot;writer&quot;: &quot;BikeConnection.upload&quot;
+    },
+    {
+      &quot;committed&quot;: false,
+      &quot;owner&quot;: &quot;user&quot;,
+      &quot;path&quot;: &quot;panel display power state&quot;,
+      &quot;trigger&quot;: &quot;explicit Display on/off for selected saved bike&quot;,
+      &quot;writer&quot;: &quot;BikeConnection.setDisplayPower&quot;
+    },
+    {
+      &quot;committed&quot;: false,
+      &quot;owner&quot;: &quot;user&quot;,
+      &quot;path&quot;: &quot;panel active driving mode&quot;,
+      &quot;trigger&quot;: &quot;explicit signal button for selected saved bike&quot;,
+      &quot;writer&quot;: &quot;BikeConnection.selectSignal&quot;
+    },
+    {
+      &quot;committed&quot;: false,
+      &quot;owner&quot;: &quot;user&quot;,
+      &quot;path&quot;: &quot;panel double-flash artwork (state 5)&quot;,
+      &quot;trigger&quot;: &quot;Send to panel with explicit double-flash replacement selected&quot;,
+      &quot;writer&quot;: &quot;BikeConnection.finishUpload / BikeProtocol.upload&quot;
+    },
+    {
+      &quot;committed&quot;: true,
+      &quot;owner&quot;: &quot;developer&quot;,
+      &quot;path&quot;: &quot;docs/{code,output,data}_map.{html,json}&quot;,
+      &quot;trigger&quot;: &quot;regenerate after structural changes&quot;,
+      &quot;writer&quot;: &quot;scripts/generate_cockpit.py&quot;
+    },
+    {
+      &quot;committed&quot;: false,
+      &quot;owner&quot;: &quot;developer&quot;,
+      &quot;path&quot;: &quot;.build/text-preview.png&quot;,
+      &quot;trigger&quot;: &quot;offline checks&quot;,
+      &quot;writer&quot;: &quot;Tests/Checks.swift&quot;
+    }
+  ],
+  &quot;schema&quot;: 1
+}
+</pre></html>

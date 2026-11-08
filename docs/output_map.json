@@ -1,0 +1,117 @@
+{
+  "artifacts": [
+    {
+      "committed": false,
+      "owner": "developer",
+      "path": ".build/halloween-*.png",
+      "trigger": "offline preset validation",
+      "writer": "Tests/Checks.swift"
+    },
+    {
+      "committed": false,
+      "owner": "user",
+      "path": ".build/*advertisements.jsonl",
+      "trigger": "explicit bounded read-only BLE scan",
+      "writer": "scripts/scan_advertisements.swift"
+    },
+    {
+      "committed": true,
+      "owner": "developer",
+      "path": "iOS/iLedBikeMobile.xcodeproj",
+      "trigger": "project regeneration",
+      "writer": "scripts/generate_ios_project.py"
+    },
+    {
+      "committed": true,
+      "owner": "developer",
+      "path": "iOS/iLedBikeMobile/Assets.xcassets",
+      "trigger": "icon regeneration",
+      "writer": "scripts/generate_app_icon.py"
+    },
+    {
+      "committed": false,
+      "owner": "user",
+      "path": "iPhone Documents/BikeLibrary.json",
+      "trigger": "debounced editing, bike assignment, background save",
+      "writer": "LibraryStore.saveNow"
+    },
+    {
+      "committed": false,
+      "owner": "developer",
+      "path": ".build/ios*/Build/Products",
+      "trigger": "simulator or Personal Team device build",
+      "writer": "xcodebuild"
+    },
+    {
+      "committed": false,
+      "owner": "user",
+      "path": "local app preference replaceFlashingMode",
+      "trigger": "double-flash checkbox changed",
+      "writer": "StudioView AppStorage"
+    },
+    {
+      "committed": false,
+      "owner": "developer",
+      "path": "dist/iLedBike Studio.app",
+      "trigger": "local build",
+      "writer": "scripts/build.sh"
+    },
+    {
+      "committed": false,
+      "owner": "user",
+      "path": "*.iledbike.json",
+      "trigger": "Save design",
+      "writer": "StudioView.saveDesign"
+    },
+    {
+      "committed": false,
+      "owner": "user",
+      "path": "*.png",
+      "trigger": "Export pixels",
+      "writer": "StudioView.exportPreview"
+    },
+    {
+      "committed": false,
+      "owner": "user",
+      "path": "panel ordinary program",
+      "trigger": "Send to panel",
+      "writer": "BikeConnection.upload"
+    },
+    {
+      "committed": false,
+      "owner": "user",
+      "path": "panel display power state",
+      "trigger": "explicit Display on/off for selected saved bike",
+      "writer": "BikeConnection.setDisplayPower"
+    },
+    {
+      "committed": false,
+      "owner": "user",
+      "path": "panel active driving mode",
+      "trigger": "explicit signal button for selected saved bike",
+      "writer": "BikeConnection.selectSignal"
+    },
+    {
+      "committed": false,
+      "owner": "user",
+      "path": "panel double-flash artwork (state 5)",
+      "trigger": "Send to panel with explicit double-flash replacement selected",
+      "writer": "BikeConnection.finishUpload / BikeProtocol.upload"
+    },
+    {
+      "committed": true,
+      "owner": "developer",
+      "path": "docs/{code,output,data}_map.{html,json}",
+      "trigger": "regenerate after structural changes",
+      "writer": "scripts/generate_cockpit.py"
+    },
+    {
+      "committed": false,
+      "owner": "developer",
+      "path": ".build/text-preview.png",
+      "trigger": "offline checks",
+      "writer": "Tests/Checks.swift"
+    }
+  ],
+  "schema": 1
+}

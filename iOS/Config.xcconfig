@@ -1,0 +1,2 @@
+// Personal signing stays in an ignored local file, or can be selected in Xcode.
+#include? "Signing.local.xcconfig"
